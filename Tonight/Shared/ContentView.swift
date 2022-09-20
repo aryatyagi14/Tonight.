@@ -8,6 +8,8 @@
 import SwiftUI
 import UIKit
 
+public var NavBounds = (0,0)
+
 struct ProfileView: View {
     var body: some View {
         VStack {
@@ -39,7 +41,7 @@ struct addEventButton: View {
     var body: some View {
         ZStack {
             Image(systemName: "plus.circle.fill")
-                .frame(width: UIScreen.main.bounds.width - 200, height: UIScreen.main.bounds.height - 500, alignment: .bottomTrailing)
+                .frame(width: UIScreen.main.bounds.width - 350, height: UIScreen.main.bounds.height - 500, alignment: .bottomTrailing)
         }
     }
 }
@@ -71,6 +73,7 @@ struct ContentView: View {
                 )
             )
         }
+        //let NavBounds = self.view.bounds
     }
 }
 
