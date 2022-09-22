@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B95BE6828DC204200555A33 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95BE6728DC204200555A33 /* AddEventView.swift */; };
+		3B95BE6928DC204200555A33 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95BE6728DC204200555A33 /* AddEventView.swift */; };
+		3B95BE6B28DC22DA00555A33 /* AddEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95BE6A28DC22DA00555A33 /* AddEventViewModel.swift */; };
+		3B95BE6C28DC22DA00555A33 /* AddEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95BE6A28DC22DA00555A33 /* AddEventViewModel.swift */; };
+		3B95BE6E28DC2E2D00555A33 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95BE6D28DC2E2D00555A33 /* Event.swift */; };
+		3B95BE6F28DC2E2D00555A33 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95BE6D28DC2E2D00555A33 /* Event.swift */; };
 		7B89A8932871113F002D0EED /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B89A8922871113F002D0EED /* Tests_iOS.swift */; };
 		7B89A8952871113F002D0EED /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B89A8942871113F002D0EED /* Tests_iOSLaunchTests.swift */; };
 		7B89A89F2871113F002D0EED /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B89A89E2871113F002D0EED /* Tests_macOS.swift */; };
@@ -37,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B95BE6728DC204200555A33 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		3B95BE6A28DC22DA00555A33 /* AddEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewModel.swift; sourceTree = "<group>"; };
+		3B95BE6D28DC2E2D00555A33 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7B89A87A28711138002D0EED /* TonightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TonightApp.swift; sourceTree = "<group>"; };
 		7B89A87B28711138002D0EED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B89A87C2871113F002D0EED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +92,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B95BE7028DC2E3000555A33 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B95BE6728DC204200555A33 /* AddEventView.swift */,
+				7B89A87B28711138002D0EED /* ContentView.swift */,
+				7B89A87A28711138002D0EED /* TonightApp.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B95BE7128DC2E3C00555A33 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3B95BE6A28DC22DA00555A33 /* AddEventViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3B95BE7228DC2EA900555A33 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B95BE6D28DC2E2D00555A33 /* Event.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7B89A87428711137002D0EED = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +132,9 @@
 		7B89A87928711138002D0EED /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				7B89A87A28711138002D0EED /* TonightApp.swift */,
-				7B89A87B28711138002D0EED /* ContentView.swift */,
+				3B95BE7228DC2EA900555A33 /* Models */,
+				3B95BE7028DC2E3000555A33 /* Views */,
+				3B95BE7128DC2E3C00555A33 /* ViewModels */,
 				7B89A87C2871113F002D0EED /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -300,7 +336,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B89A8A428711140002D0EED /* ContentView.swift in Sources */,
+				3B95BE6B28DC22DA00555A33 /* AddEventViewModel.swift in Sources */,
 				7B89A8A22871113F002D0EED /* TonightApp.swift in Sources */,
+				3B95BE6828DC204200555A33 /* AddEventView.swift in Sources */,
+				3B95BE6E28DC2E2D00555A33 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +348,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B89A8A528711140002D0EED /* ContentView.swift in Sources */,
+				3B95BE6C28DC22DA00555A33 /* AddEventViewModel.swift in Sources */,
 				7B89A8A328711140002D0EED /* TonightApp.swift in Sources */,
+				3B95BE6928DC204200555A33 /* AddEventView.swift in Sources */,
+				3B95BE6F28DC2E2D00555A33 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +505,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P49G6QAP92;
+				DEVELOPMENT_TEAM = 3VUUCS34BU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -493,7 +535,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P49G6QAP92;
+				DEVELOPMENT_TEAM = 3VUUCS34BU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
